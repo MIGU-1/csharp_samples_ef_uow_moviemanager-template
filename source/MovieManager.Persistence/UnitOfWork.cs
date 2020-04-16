@@ -59,7 +59,6 @@ namespace MovieManager.Persistence
             _dbContext.Database.Migrate();
         }
 
+        public void SaveChanges() => _dbContext.SaveChanges();
     }
-
-
 }
