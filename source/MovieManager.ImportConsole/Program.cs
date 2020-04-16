@@ -124,7 +124,7 @@ namespace MovieManager.ImportConsole
             int min = timespan.Minutes;
             int sec = timespan.Seconds;
 
-            return withSeconds ? $"{hr}h {min}min {sec}sec" : $"{hr} h {min} min";
+            return withSeconds ? $"{hr:D2}h {min:D2}min {sec:D2}sec" : $"{hr:D2} h {min:D2} min";
         }
     }
 }
